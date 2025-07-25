@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 109px;
+  margin-top: 10px;
+  padding: 0 50px;
+  background-color: #fadadd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 40px;
+  font-weight: 400;
+  font-family: "Alata", sans-serif;
+}
+
+header nav a {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Alata", sans-serif;
+  text-decoration: none;
+  color: black;
+}
+
+/*----------------------------------------------------------------*/
+
+body {
+  background-color: #f4f4f9;
+}
+
+main div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.bibliografia {
+  width: 100%;
+  min-height: 318px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 30px 0 0 80px;
+  background-color: #f4ecf2c4;
+  gap: 20px;
+}
+
+.bibliografia img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  border: 4px solid #f4b6c2;
+  transition: transform 0.3s ease;
+}
+
+.bibliografia img:hover {
+  transform: scale(1.05);
+}
+
+.textos {
+  font-family: "Alata", sans-serif;
+}
+
+.textos h2 {
+  font-size: 24px;
+  font-weight: 400;
+  color: black;
+}
+
+.textos p {
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+}
+
+/*----------------------------------------------------------------*/
+
+.hobbies,
+.topicos {
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+}
+
+.hobbies {
+  align-items: flex-end;
+}
+
+.topicos {
+  align-items: flex-start;
+}
+
+.hobbies p {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Alata", sans-serif;
+  margin-bottom: 25px;
+}
+
+.topicos p {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Alata", sans-serif;
+  margin-bottom: 25px;
+}
+
+.listaHob {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  list-style: none;
+}
+
+.listaTop {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  list-style: none;
+}
+
+.listaHob li:hover,
+.listaTop li:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.2);
+  background-color: #ffddee;
+}
+
+.listaHob li {
+  height: 130px;
+  border-radius: 5px;
+  padding: 17px;
+  width: 80px;
+  background-color: #fadadd;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 16px;
+  text-align: center;
+  font-family: "Alata", sans-serif;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.listaTop li {
+  height: 130px;
+  border-radius: 6px;
+  padding: 0px 10px 10px;
+  width: 80px;
+  background-color: #fadadd;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  font-size: 16px;
+  text-align: center;
+  font-family: "Alata", sans-serif;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.numberTop {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 8px;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 19px;
+  height: 44px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-family: "Alata", sans-serif;
+}
+
+/*----------------------------------------------------------------*/
+
+form {
+  margin: 80px;
+  font-family: "Alata", sans-serif;
+}
+
+form h2 {
+  font-size: 24px;
+  padding-left: 120px;
+  font-weight: 400;
+  padding-bottom: 15px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form textarea,
+form input {
+  width: 1000px;
+  max-width: 100%;
+  border-radius: 4px;
+  border: none;
+  background-color: #fadadd;
+  padding: 10px 5px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Alata", sans-serif;
+}
+
+form textarea {
+  height: 40px;
+}
+
+form textarea::placeholder,
+form input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+form button {
+  width: 127px;
+  height: 37px;
+  border-radius: 4px;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #fadadd;
+  font-family: "Alata", sans-serif;
+}
+
+form button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.botao {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+/*----------------------------------------------------------------*/
+
+footer {
+  height: 70px;
+  background-color: #fadadd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+
+footer nav a {
+  width: 32px;
+  height: 32px;
+}
+
+.contato button {
+  width: 162px;
+  height: 32px;
+  border-radius: 6px;
+  border: none;
+  background-color: #f4f4f9;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Alata", sans-serif;
+}
+
+.contato button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+/*-----------------------------RESPONSIVIDADE-----------------------------------*/
+
+@media screen and (max-width: 1025px) {
+  form h2 {
+    padding-left: 0px;
+  }
+}
+
+@media screen and (max-width: 431px) {
+  header {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  header h1 {
+    font-size: 25px;
+  }
+
+  header nav a {
+    font-size: 15px;
+  }
+
+  .bibliografia {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding-left: 5px;
+    text-align: center;
+  }
+
+  .textos {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: justify;
+  }
+
+  main div {
+    flex-direction: column;
+  }
+
+  .hobbies,
+  .topicos {
+    align-items: self-start;
+  }
+
+  .listaHob,
+  .listaTop {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  form textarea,
+  form input {
+    width: 370px;
+  }
+
+  .botao {
+    justify-content: center;
+  }
+
+  footer {
+    height: 127px;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+  }
+}
